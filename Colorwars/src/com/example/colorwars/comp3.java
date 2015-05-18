@@ -1,6 +1,8 @@
 package com.example.colorwars;
 
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
@@ -981,7 +983,8 @@ if(cp2!=0||bmoves==0){
 	
 public int rand(int possibility)
 {
-	return((int)(Math.random()*possibility));}
+	Random prayas = new Random() ;
+	return(prayas.nextInt(possibility));}
 	
 //Function to check if a change is made
 //=========================================================================================================================
